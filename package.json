@@ -33,7 +33,7 @@
         "particles.js": "^2.0.0"
     },
     "devDependencies": {
-        "browser-sync": "2.24.5",
+        "browser-sync": "^2.26.3",
         "gulp": "^3.9.1",
         "gulp-clean-css": "3.9.4",
         "gulp-header": "2.0.5",

@@ -18,22 +18,72 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <!-- Custom fonts for this page -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this page -->
   <link href="css/agency.css" rel="stylesheet">
 
-  <!-- Devicons -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- Project Grid Styles -->
+  <link rel="stylesheet" href="css/projectgrid.css">
 
+  <!-- Devicons -->
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  <style>
+    /* Style the tab */
+    .tab {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 30%;
+      height: 300px;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 70%;
+      border-left: none;
+      height: 300px;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -42,8 +92,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container" style="width: 100vw;">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Rohan Lekhwani</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
         <i class="fa fa-bars"></i>
       </button>
@@ -79,7 +130,7 @@
   </nav>
 
   <!-- Header -->
-  <header id='particles-js' class="masthead" style = "height: 100vh; width: auto;">
+  <header id='particles-js' class="masthead" style="height: 100vh; width: auto;">
     <div class="container">
 
     </div>
@@ -88,8 +139,8 @@
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
   </header>
-  <div style="text-align:center; background-color: black; padding-bottom: 50px; height: auto"><a class="btn btn-success btn-xl text-uppercase js-scroll-trigger"
-      href="#services">Know Me More</a></div>
+  <div style="text-align:center; background-color: black; padding-bottom: 50px; height: auto"><a
+      class="btn btn-success btn-xl text-uppercase js-scroll-trigger" href="#services">Know Me More</a></div>
 
   <!-- About -->
   <section id="services">
@@ -100,7 +151,8 @@
         </div>
       </div>
       <div class="row text-center">
-        <p style="margin: 50px;">I am an undergrad at the <strong>Indian Institute of Information Technology, Pune</strong>.
+        <p style="margin: 50px;">I am an undergrad at the <strong>Indian Institute of Information Technology,
+            Pune</strong>.
           I love to learn new things and build
           cool
           stuff. I am an <strong>avid coder, amateur writer</strong>, and a full-time foodie. Welcome to my website.</p>
@@ -140,137 +192,192 @@
           <h2 class="section-heading text-uppercase">Projects</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/facedetection.png" alt="Alive">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Face Detection</h4>
-            <p class="text-muted">Detect any face and its features!</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/twittersentimentanalysis.jpg" alt="Twitter Sentiment Analysis">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Twitter Sentiment Analysis</h4>
-            <p class="text-muted">Know the public sentiment regarding any topic on Twitter!</p>
-          </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/iiitpuneapp.png" alt="IIIT Pune App">
-          </a>
-          <div class="portfolio-caption">
-            <h4>IIIT Pune App</h4>
-            <p class="text-muted">IIIT Pune in your pocket!</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/irisflowerclassification.jpg" alt="Iris Flower Classification">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Iris Flower Classification.</h4>
-            <p class="text-muted">Classifying Iris Flowers based on UCI Dataset.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/instascraper.png" alt="Bideo Player">
-          </a>
-          <div class="portfolio-caption">
-            <h4>InstaScraper</h4>
-            <p class="text-muted">Download and save all Instagram Images of anyone on the Internet!</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/bideoplayer.png" alt="Bideo Player">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Bideo Player</h4>
-            <p class="text-muted">The video player you won't find anywhere else(Cause it's an original :P)</p>
-          </div>
-        </div>
+      <br>
 
-      </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/alive.png" alt="Alive">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Alive</h4>
-            <p class="text-muted">A game which can be played straight from the Command Prompt</p>
-          </div>
+        <div class="col-md-2 mb-3">
+          <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a id="visaitab" class="nav-link active" id="home-tab" data-toggle="tab" href="#visai" role="tab" aria-controls="visai"
+                aria-selected="true" style="background-color: #F24B4B; color:white;text-align: center;">Vision & AI</a>
+            </li>
+            <li class="nav-item">
+              <a id="aandwtab" class="nav-link" id="profile-tab" data-toggle="tab" href="#aandw" role="tab" aria-controls="a&w"
+                aria-selected="false" style="background-color:white;color:black;text-align: center;">App and Web</a>
+            </li>
+            <li class="nav-item">
+              <a id="softwaretab" class="nav-link" id="contact-tab" data-toggle="tab" href="#software" role="tab" aria-controls="software"
+                aria-selected="false" style="background-color:white;color:black;text-align: center;">Software</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
+        <!-- /.col-md-4 -->
+        <div class="col-md-10">
+          <div class="tab-content" id="myTabContent" style="padding: 15px;">
+            <div class="tab-pane fade show active" id="visai" role="tabpanel" aria-labelledby="home-tab">
+              <!-- <h2>Home</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed accusantium eligendi
+                molestiae quo hic velit nobis et, tempora placeat ratione rem blanditiis voluptates vel ipsam? Facilis,
+                earum!</p> -->
+              <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/facedetection.png" alt="Alive">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Face Detection</h4>
+                    <p class="text-muted">Detect any face and its features!</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/twittersentimentanalysis.jpg"
+                      alt="Twitter Sentiment Analysis">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Twitter Sentiment Analysis</h4>
+                    <p class="text-muted">Know the public sentiment regarding any topic on Twitter!</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/irisflowerclassification.jpg"
+                      alt="Iris Flower Classification">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Iris Flower Classification.</h4>
+                    <p class="text-muted">Classifying Iris Flowers based on UCI Dataset.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="aandw" role="tabpanel" aria-labelledby="profile-tab">
+              <!-- <h2>Profile</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed accusantium eligendi
+                molestiae quo hic velit nobis et, tempora placeat ratione rem blanditiis voluptates vel ipsam? Facilis,
+                earum!</p> -->
+              <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/iiitpuneapp.png" alt="IIIT Pune App">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>IIIT Pune App</h4>
+                    <p class="text-muted">IIIT Pune in your pocket!</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/instascraper.png" alt="Bideo Player">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>InstaScraper</h4>
+                    <p class="text-muted">Download and save all Instagram Images of anyone on the Internet!</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img style="width : auto; height: auto;" src="img/portfolio/r&m.png" alt="Rick and Morty Webpage">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Rick and Morty Webpage</h4>
+                    <p class="text-muted">A webpage of my all-time favorite cartoons - Rick and Morty.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="software" role="tabpanel" aria-labelledby="contact-tab">
+              <!-- <h2>Contact</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed accusantium eligendi
+                molestiae quo hic velit nobis et, tempora placeat ratione rem blanditiis voluptates vel ipsam? Facilis,
+                earum!</p> -->
+
+              <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/bideoplayer.png" alt="Bideo Player">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Bideo Player</h4>
+                    <p class="text-muted">The video player you won't find anywhere else(Cause it's an original :P)</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/alive.png" alt="Alive">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Alive</h4>
+                    <p class="text-muted">A game which can be played straight from the Command Prompt</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/code.png" alt="Code Wars">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Code Wars</h4>
+                    <p class="text-muted">MCQ system for Annual Techfest of IIIT Pune.</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/code.png" alt="Code Wars">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Code Wars</h4>
-            <p class="text-muted">MCQ system for Annual Techfest of IIIT Pune.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img style="width : auto; height: auto;" src="img/portfolio/r&m.png" alt="Rick and Morty Webpage">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Rick and Morty Webpage</h4>
-            <p class="text-muted">A webpage of my all-time favorite cartoons - Rick and Morty.</p>
           </div>
         </div>
       </div>
@@ -290,7 +397,8 @@
           <ul class="timeline">
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/drdo.jpg" alt="Defence Research and Development Organisation">
+                <img class="rounded-circle img-fluid" src="img/about/drdo.jpg"
+                  alt="Defence Research and Development Organisation">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -298,14 +406,16 @@
                   <h4 class="subheading">Defence Research and Development Organisation (DRDO), New Delhi</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Worked at the Defence Terrain Research Laboratory(DTRL) to visualize Geospatial
+                  <p class="text-muted">Worked at the Defence Terrain Research Laboratory(DTRL) to visualize
+                    Geospatial
                     data captured by satellites to predict the occurrence of landslides using Deep Learning.</p>
                 </div>
               </div>
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/cdac.png" alt="Center for Development of Advanced Computing (C-DAC), Pune">
+                <img class="rounded-circle img-fluid" src="img/about/cdac.png"
+                  alt="Center for Development of Advanced Computing (C-DAC), Pune">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -315,7 +425,8 @@
                 <div class="timeline-body">
                   <p class="text-muted">Worked with Team Gist to start a project that would improve upon the
                     GoTranslate
-                    plugin. The model would scrape data from multiple websites, translate it into the required language
+                    plugin. The model would scrape data from multiple websites, translate it into the required
+                    language
                     and
                     make it availabe in a tabular format which supports ammendments by the user.</p>
                 </div>
@@ -481,14 +592,16 @@
       <br>
       <p>Apart from coding, I love writing. I write short stories and a <a href="blog.html">blog!</a>. I love
         to run
-        marathons and won a medal for the same in Blue Brigade's - "Run for Good Health Marathon" in March 2018. I also
+        marathons and won a medal for the same in Blue Brigade's - "Run for Good Health Marathon" in March 2018. I
+        also
         love
         to play table - tennis though I won't call myself a professional (yet :P).</p>
 
       <p>I read a lot of books (both fiction and non-fiction) and try to complete one book per week. Some of my
         favorite
         books
-        are - 'The Alchemist by Paulo Coelho', 'The Saint, The Surfer and The CEO by Robin Sharma' and 'Think and Grow
+        are - 'The Alchemist by Paulo Coelho', 'The Saint, The Surfer and The CEO by Robin Sharma' and 'Think and
+        Grow
         Rich
         by Napolean Hill'.</p>
 
@@ -503,20 +616,21 @@
       <p>Made with <img src="img/logos/love.png"> by Rohan Lekhwani</p>
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Rohan Lekhwani 2019</span>
+          <span class="copyright">Copyright &copy; Rohan Lekhwani 2020</span>
         </div>
         <div class="col-xs-4" style="position: absolute; right: 0">
           <!-- Hit Counter -->
           <table cellspacing='0' cellpadding='0' width='81' border='0'>
             <tr>
-              <td height='25' width='81'><a href="" target='_blank'><img border='0' height='25' src="http://www.image-free-counter.net/winder.82/fretsome182.png"
-                    alt="" width='81'></a></td>
+              <td height='25' width='81'><a href="" target='_blank'><img border='0' height='25'
+                    src="http://www.image-free-counter.net/winder.82/fretsome182.png" alt="" width='81'></a></td>
             </tr>
             <tr>
               <td height='11'><a href="http://www.free-counter-plus.com/" target='_blank'><img border='0' width='45'
-                    alt="free-counter-plus.com" src="http://www.image-free-counter.net/gruelers/tonality.gif" height='11'></a><a
-                  href="http://www.free-counter-plus.com/counter/stats/stats.asp?id=555571929" target='_blank'><img alt=""
-                    width='36' border='0' height='11' src="http://www.image-free-counter.net/shadings/37883.gif"></a></td>
+                    alt="free-counter-plus.com" src="http://www.image-free-counter.net/gruelers/tonality.gif"
+                    height='11'></a><a href="http://www.free-counter-plus.com/counter/stats/stats.asp?id=555571929"
+                  target='_blank'><img alt="" width='36' border='0' height='11'
+                    src="http://www.image-free-counter.net/shadings/37883.gif"></a></td>
             </tr>
             <tr align='Center'>
               <td height='14' colspan='2'></td>
@@ -548,7 +662,8 @@
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/iiitpuneapp.png" alt="IIIT Pune App">
                 <p>Built the Institute Android App which has features like Live Mess Menu, Issuing book by just
                   scanning
-                  the book barcode straight from your phone( <strong>13 types of 1-D and 2-D barcodes supported</strong>
+                  the book barcode straight from your phone( <strong>13 types of 1-D and 2-D barcodes
+                    supported</strong>
                   ), knowing what's
                   new
                   at IIIT Pune right from your phone and many other features.</p>.
@@ -558,7 +673,8 @@
                 <ul class="list-inline">
                   <li>Date: September, 2017 to August, 2018 </li>
                   <li>Play Store link:</li>
-                  <li><a href="https://play.google.com/store/apps/details?id=com.rohanlekhwani.iiitpuneapp">IIIT Pune
+                  <li><a href="https://play.google.com/store/apps/details?id=com.rohanlekhwani.iiitpuneapp">IIIT
+                      Pune
                       App.</a></li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -587,13 +703,16 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Bideo Player</h2>
-                <p class="item-intro text-muted">The video player you won't find anywhere else(Cause it's an original
+                <p class="item-intro text-muted">The video player you won't find anywhere else(Cause it's an
+                  original
                   :P)</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/bideoplayer.png" alt="Bideo Player">
-                <p>Built a Video Player from scratch that supports videos of MP4 format using <strong>JavaFx</strong>.
+                <p>Built a Video Player from scratch that supports videos of MP4 format using
+                  <strong>JavaFx</strong>.
                   The video player
                   supports
-                  almost all the functions found in a commercial video player including changing video speed, jumping
+                  almost all the functions found in a commercial video player including changing video speed,
+                  jumping
                   across
                   videos and viewing in full-screen.</p>
                 <ul class="list-inline">
@@ -629,7 +748,8 @@
                 <h2 class="text-uppercase">Alive</h2>
                 <p class="item-intro text-muted">A game which can be played straight from the Command Prompt</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/alive.png" alt="Alive">
-                <p>Built a simple aircraft shooting game using C++ based on Nokia's famous game Space Impact.The game
+                <p>Built a simple aircraft shooting game using C++ based on Nokia's famous game Space Impact.The
+                  game
                   can directly be played from the console
                   using
                   keyboard controls.</p>
@@ -669,7 +789,9 @@
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/code.png" alt="Code Wars">
                 <p>Built a timed online MCQ system which was used by all the participants in the event of the Annual
                   Techfest of IIIT Pune. The participants had to choose an option out of 4 possible options and were
-                  given scores at the end of the quiz or at the end of the time limit given whichever occurred earlier.</p>
+                  given scores at the end of the quiz or at the end of the time limit given whichever occurred
+                  earlier.
+                </p>
                 <strong>Was praised by the Director of the Institute for building such a system.</strong>
                 <ul class="list-inline">
                   <li>Date: September 2018</li>
@@ -704,15 +826,18 @@
                 <h2 class="text-uppercase">Rick and Morty Webpage</h2>
                 <p class="item-intro text-muted">A webpage of my all-time favorite cartoons - Rick and Morty.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/r&m.png" alt="Rick and Morty Webpage">
-                <p>Built a webpage using Bootstrap and plain CSS and HTML of my all-time favorite cartoon series Rick
-                  and Morty. The webpage features all my favorite images and quotes of Rick and Morty which can also be
+                <p>Built a webpage using Bootstrap and plain CSS and HTML of my all-time favorite cartoon series
+                  Rick
+                  and Morty. The webpage features all my favorite images and quotes of Rick and Morty which can also
+                  be
                   downloded from the browser.</p>
                 <ul class="list-inline">
                   <li>Date: June 2018</li>
                   <li>View the Webpage</li>
                   <li><a href="https://ronlek.github.io/Rick-and-Morty-WebPage/">Rick and Morty Webpage</a></li>
                   <li>GitHub Repo Link:</li>
-                  <li><a href="https://github.com/RonLek/Rick-and-Morty-WebPage">Rick and Morty Webpage(GitHub)</a></li>
+                  <li><a href="https://github.com/RonLek/Rick-and-Morty-WebPage">Rick and Morty Webpage(GitHub)</a>
+                  </li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -741,13 +866,15 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Twitter Sentiment Analysis</h2>
                 <p class="item-intro text-muted">Know the public sentiment regarding any topic on Twitter!</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/twittersentimentanalysis.jpg" alt="Twitter Sentiment Analysis">
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/twittersentimentanalysis.jpg"
+                  alt="Twitter Sentiment Analysis">
                 <p>Integrated the Twitter API in a model that analyses the public sentiments of Tweets regarding a
                   particular topic and predicts the subjectivity and polarity rating for each Tweet.</p>
                 <ul class="list-inline">
                   <li>Date: November 2018</li>
                   <li>GitHub Repo Link:</li>
-                  <li><a href="https://github.com/RonLek/Twitter-Sentiment-Analysis">Twitter Sentiment Analysis</a></li>
+                  <li><a href="https://github.com/RonLek/Twitter-Sentiment-Analysis">Twitter Sentiment Analysis</a>
+                  </li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -776,16 +903,19 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Iris Flower Classification</h2>
                 <p class="item-intro text-muted">Classifying Iris Flowers based on UCI Dataset.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/irisflowerclassification.jpg" alt="Iris Flower Classification">
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/irisflowerclassification.jpg"
+                  alt="Iris Flower Classification">
                 <p>Built a model that can classify Iris Flowers based on 4 parameters - sepal length, sepal width,
-                  petal length, petal width.<br>The model implements <strong>Logistic Regression, Linear Discriminant
+                  petal length, petal width.<br>The model implements <strong>Logistic Regression, Linear
+                    Discriminant
                     Analysis, Decision Tree Classifier,
                     Gaussian Naive Bayes and Support Vector Machine</strong> on the dataset and chooses the most
                   optimum.<br>Dataset used -> <strong>UCI Iris Dataset</strong></p>
                 <ul class="list-inline">
                   <li>Date: October 2018</li>
                   <li>GitHub Repo Link:</li>
-                  <li><a href="https://github.com/RonLek/Iris-Flower-Classification">Iris Flower Classification</a></li>
+                  <li><a href="https://github.com/RonLek/Iris-Flower-Classification">Iris Flower Classification</a>
+                  </li>
                   <li>Dataset Link:</li>
                   <li><a href="https://archive.ics.uci.edu/ml/datasets/iris">UCI Iris Dataset</a></li>
                 </ul>
@@ -815,10 +945,12 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">InstaScraper</h2>
-                <p class="item-intro text-muted">Download and save all Instagram Images of anyone on the Internet!</p>
+                <p class="item-intro text-muted">Download and save all Instagram Images of anyone on the Internet!
+                </p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/instascraper.png" alt="Instascraper">
                 <p>Built a webscraper that could fetch all the images posted by any user on Instagram and save it on
-                  the disk. The scraper uses <strong>selenium</strong> and <strong>requests</strong> Python libraries
+                  the disk. The scraper uses <strong>selenium</strong> and <strong>requests</strong> Python
+                  libraries
                   to fetch all the
                   data.</p>
                 <ul class="list-inline">
@@ -884,6 +1016,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+  <!-- Project Grid Js -->
+  <script src="js/projectgrid.js"></script>
 
 </body>
 

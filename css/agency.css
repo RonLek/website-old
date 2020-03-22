@@ -318,6 +318,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-dialog {
+  text-align: center;
   margin: 1rem;
   max-width: 100vw;
 }
@@ -696,4 +697,22 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+/* Project Grid */
+#visaitab:hover{
+  color:white !important;
+  background-color: #F24B4B !important;
+}
+
+#aandwtab:focus, #aandwtab:hover{
+  color:white !important;
+  background-color: #F8BB44 !important;
+  font-weight:bold
+}
+
+#softwaretab:focus,#softwaretab:hover{
+  color:white !important;
+  background-color: #60BFBF !important;
+  font-weight:bold
 }

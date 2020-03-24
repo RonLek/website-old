@@ -32,12 +32,12 @@
   <!-- Custom styles for this page -->
   <link href="css/agency.css" rel="stylesheet">
 
-  <!-- Project Grid Styles -->
-  <link rel="stylesheet" href="css/projectgrid.css">
-
   <!-- Devicons -->
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  <!-- Academicons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
   <style>
     /* Style the tab */
@@ -160,6 +160,11 @@
       <div style="margin-top: 60px;">
         <ul class="list-inline social-buttons">
           <li class="list-inline-item" style="margin-right: 10px;">
+            <a href="https://scholar.google.com/citations?hl=en&user=RAaISaQAAAAJ">
+              <i class="ai ai-google-scholar ai-1x" style="padding: 0.3em 0.37em"></i>
+            </a>
+          </li>
+          <li class="list-inline-item" style="margin-right: 10px;">
             <a href="https://github.com/RonLek">
               <i class="fa fa-github" style="padding: 0.3em 0.37em"></i>
             </a>
@@ -199,16 +204,19 @@
         <div class="col-md-2 mb-3">
           <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
             <li class="nav-item">
-              <a id="visaitab" class="nav-link active" id="home-tab" data-toggle="tab" href="#visai" role="tab" aria-controls="visai"
-                aria-selected="true" style="background-color: #F24B4B; color:white;text-align: center;">Vision & AI</a>
+              <a id="visaitab" class="nav-link active" id="home-tab" data-toggle="tab" href="#visai" role="tab"
+                aria-controls="visai" aria-selected="true"
+                style="background-color: #F24B4B; color:white;text-align: center;">Vision & AI</a>
             </li>
             <li class="nav-item">
-              <a id="aandwtab" class="nav-link" id="profile-tab" data-toggle="tab" href="#aandw" role="tab" aria-controls="a&w"
-                aria-selected="false" style="background-color:white;color:black;text-align: center;">App and Web</a>
+              <a id="aandwtab" class="nav-link" id="profile-tab" data-toggle="tab" href="#aandw" role="tab"
+                aria-controls="a&w" aria-selected="false"
+                style="background-color:white;color:black;text-align: center;">App and Web</a>
             </li>
             <li class="nav-item">
-              <a id="softwaretab" class="nav-link" id="contact-tab" data-toggle="tab" href="#software" role="tab" aria-controls="software"
-                aria-selected="false" style="background-color:white;color:black;text-align: center;">Software</a>
+              <a id="softwaretab" class="nav-link" id="contact-tab" data-toggle="tab" href="#software" role="tab"
+                aria-controls="software" aria-selected="false"
+                style="background-color:white;color:black;text-align: center;">Software</a>
             </li>
           </ul>
         </div>
@@ -228,7 +236,7 @@
                         <i class="fa fa-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/facedetection.png" alt="Alive">
+                    <img class="img-fluid" src="img/portfolio/facedetection.jpg" alt="Alive">
                   </a>
                   <div class="portfolio-caption">
                     <h4>Face Detection</h4>
@@ -277,6 +285,22 @@
                 molestiae quo hic velit nobis et, tempora placeat ratione rem blanditiis voluptates vel ipsam? Facilis,
                 earum!</p> -->
               <div class="row">
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/facelook.png" alt="FaceLook">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>FaceLook</h4>
+                    <p class="text-muted">Identify and Report Missing Persons!</p>
+                  </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                     <div class="portfolio-hover">
@@ -466,13 +490,18 @@
             </li>-->
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h2 style="padding: 1.8em 0.5em;">Start!</h2>
+                <h2 id="startheader" style="padding: 1.8em 0.5em;">Start!</h2>
               </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      if (screen.width < 768) {
+        $('#startheader').replaceWith('<h6 id="startheader" style="padding: 1.8em 0.5em;">Start!</h6>');
+      }
+    </script>
   </section>
 
   <!-- Education -->
@@ -667,9 +696,8 @@
                   ), knowing what's
                   new
                   at IIIT Pune right from your phone and many other features.</p>.
-                <p><strong>The App has been made the official App of IIIT Pune and has more than 200 downloads and
-                    more than
-                    90 5-star ratings on the Play Store.</strong></p>
+                <p><strong>The App has been made the official App of IIIT Pune and has more than 500 downloads and 150+
+                    5-star ratings on the Play Store.</strong></p>
                 <ul class="list-inline">
                   <li>Date: September, 2017 to August, 2018 </li>
                   <li>Play Store link:</li>
@@ -985,13 +1013,53 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Face Detection</h2>
                 <p class="item-intro text-muted">Detect any face and its features!</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/facedetection.png" alt="Face Detection">
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/facedetection.jpg" alt="Face Detection">
                 <p>Built a model using <strong>OpenCV</strong> that can detect faces and face features like eyes and
                   the area containing eyes and nose.</p>
                 <ul class="list-inline">
                   <li>Date: January 2019</li>
                   <li>GitHub Repo Link:</li>
                   <li><a href="https://github.com/RonLek/Face-Detection">Face Detection</a></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 10 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">FaceLook</h2>
+                <p class="item-intro text-muted">Identify and Report Missing Persons!</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/facelook.png" alt="FaceLook">
+                <p>Trained a <strong>TfLite</strong> model to recognize missing persons and used it in an app. On
+                  recognizing a person successfully the app also captures the GPS coordinates of the place where the
+                  person was scanned and sends it to the authorities. Achieved Top 1% out of 2500 participants in the
+                  Missing Hackathon on HackerEarth. </p>
+                <ul class="list-inline">
+                  <li>Date: August 2019</li>
+                  <li>GitHub Repo Link:</li>
+                  <li><a href="https://github.com/RonLek/FaceLook_Missing_Hackathon">FaceLook (Missing Hackathon)</a>
+                  </li>
+                  <li>YouTube Link</li>
+                  <li><a href="https://youtu.be/rVd--I0j3o0">Demo</a></li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -1016,9 +1084,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
-
-  <!-- Project Grid Js -->
-  <script src="js/projectgrid.js"></script>
 
 </body>
 

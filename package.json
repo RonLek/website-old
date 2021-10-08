@@ -38,7 +38,7 @@
         "lodash.template": "^4.5.0",
         "mixin-deep": "^2.0.1",
         "particles.js": "^2.0.0",
-        "set-value": "^3.0.1",
+        "set-value": "^4.0.1",
         "sshpk": "^1.16.1",
         "tar": "^6.0.1"
     },
